@@ -1,0 +1,92 @@
+{
+  "total": 289874,
+  "benign": 144937,
+  "malicious": 144937,
+  "splits": {
+    "train": {
+      "total": 231900,
+      "benign": 115950,
+      "malicious": 115950,
+      "pct": 80.0,
+      "multimodal": 1504,
+      "text_only": 230396
+    },
+    "validation": {
+      "total": 28986,
+      "benign": 14493,
+      "malicious": 14493,
+      "pct": 10.0,
+      "multimodal": 184,
+      "text_only": 28802
+    },
+    "test": {
+      "total": 28988,
+      "benign": 14494,
+      "malicious": 14494,
+      "pct": 10.0,
+      "multimodal": 182,
+      "text_only": 28806
+    }
+  },
+  "attack_families": 15,
+  "attack_family_counts": {
+    "Context Poisoning": 9663,
+    "Data Exfiltration": 9662,
+    "Decision Manipulation": 9662,
+    "Footer Injection": 9663,
+    "Header Injection": 9662,
+    "Hidden Multimodal": 9662,
+    "Instruction Override": 9663,
+    "Insurance-specific Attacks": 9663,
+    "Invisible Character Injection": 9662,
+    "Metadata Injection": 9663,
+    "OCR-specific Attacks": 9662,
+    "Policy Bypass": 9663,
+    "Tiny Font Injection": 9662,
+    "Watermark Injection": 9662,
+    "White Text Injection": 9663
+  },
+  "payloads": 58,
+  "labels": [
+    "benign",
+    "malicious"
+  ],
+  "schema": [
+    "sample_id",
+    "text",
+    "ocr_text",
+    "image_path",
+    "label",
+    "attack_family",
+    "payload_id",
+    "source_module",
+    "split"
+  ],
+  "modality": {
+    "multimodal": 1870,
+    "text_only": 288004,
+    "multimodal_pct": 0.645,
+    "text_only_pct": 99.355
+  },
+  "physical_images": 1870,
+  "image_path_repair": {
+    "nullified": 1817,
+    "relativized": 1870,
+    "already_null": 286187,
+    "already_ok": 0
+  },
+  "integrity": {
+    "duplicate_ids": 0,
+    "duplicate_rows": 0,
+    "cross_split_overlap": 0,
+    "group_leakage": 0,
+    "broken_image_paths": 0,
+    "absolute_paths": 0
+  },
+  "parquet_sha256": {
+    "train": "da60b014bb648d29dcbdb26f1f682496d020915c9bc0031b79bd0067aa1755d0",
+    "validation": "b2a0c59892244475fb2d019332faf8ae50c53deb1aad850a329988453f186f01",
+    "test": "685d1461cfee35030a167bd58b046c80214f676af7d1522ae1d3eeceaeb5e243"
+  },
+  "all_checks_pass": true
+}

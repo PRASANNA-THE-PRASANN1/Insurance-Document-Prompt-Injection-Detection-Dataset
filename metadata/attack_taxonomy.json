@@ -1,0 +1,394 @@
+{
+  "description": "Attack taxonomy for PIID Dataset. 15 attack families, 58 unique payload IDs. Benign samples have attack_family='none' and payload_id='none'.",
+  "total_attack_families": 15,
+  "total_payloads": 58,
+  "families": {
+    "Context Poisoning": {
+      "total_malicious_samples": 9663,
+      "payload_ids": [
+        "PAY-CP-89d53fcfa6",
+        "PAY-CP-a2d460f2e0",
+        "PAY-CP-b89f5832d0"
+      ],
+      "payload_count": 3
+    },
+    "Data Exfiltration": {
+      "total_malicious_samples": 9662,
+      "payload_ids": [
+        "PAY-DE-25ce43d284",
+        "PAY-DE-2be3be2b5b",
+        "PAY-DE-57744aaeb7",
+        "PAY-DE-8d16fece4f",
+        "PAY-DE-d1faf0cbb3"
+      ],
+      "payload_count": 5
+    },
+    "Decision Manipulation": {
+      "total_malicious_samples": 9662,
+      "payload_ids": [
+        "PAY-DM-07cc30f11d",
+        "PAY-DM-27c5bf4378",
+        "PAY-DM-59e44f09c9",
+        "PAY-DM-7bcdd656be",
+        "PAY-DM-9d8a7ea174"
+      ],
+      "payload_count": 5
+    },
+    "Footer Injection": {
+      "total_malicious_samples": 9663,
+      "payload_ids": [
+        "PAY-FI-28de1708e1",
+        "PAY-FI-d8f6bc5564",
+        "PAY-FI-ee566e169a"
+      ],
+      "payload_count": 3
+    },
+    "Header Injection": {
+      "total_malicious_samples": 9662,
+      "payload_ids": [
+        "PAY-HI-87e35177c9",
+        "PAY-HI-ae1f3046e4",
+        "PAY-HI-c22b2411eb"
+      ],
+      "payload_count": 3
+    },
+    "Hidden Multimodal": {
+      "total_malicious_samples": 9662,
+      "payload_ids": [
+        "PAY-HM-4cd35f8e62",
+        "PAY-HM-d708429f0b",
+        "PAY-HM-f5d02806f3",
+        "PAY-HM-faeacfcbb7"
+      ],
+      "payload_count": 4
+    },
+    "Instruction Override": {
+      "total_malicious_samples": 9663,
+      "payload_ids": [
+        "PAY-IO-182aaca013",
+        "PAY-IO-40784737ff",
+        "PAY-IO-623c2347d8",
+        "PAY-IO-a6fbc71848",
+        "PAY-IO-c1a0d03c14"
+      ],
+      "payload_count": 5
+    },
+    "Insurance-specific Attacks": {
+      "total_malicious_samples": 9663,
+      "payload_ids": [
+        "PAY-IA-18a43ed134",
+        "PAY-IA-2a030483ce",
+        "PAY-IA-5c72996474",
+        "PAY-IA-a87621c2a1",
+        "PAY-IA-f29011e7f9",
+        "PAY-IA-f56c0f021c"
+      ],
+      "payload_count": 6
+    },
+    "Invisible Character Injection": {
+      "total_malicious_samples": 9662,
+      "payload_ids": [
+        "PAY-ICI-165a8c8325",
+        "PAY-ICI-d42ddbcc35",
+        "PAY-ICI-e161d6a7f7"
+      ],
+      "payload_count": 3
+    },
+    "Metadata Injection": {
+      "total_malicious_samples": 9663,
+      "payload_ids": [
+        "PAY-MI-07a52dbd3f",
+        "PAY-MI-856e0a9bac",
+        "PAY-MI-eaaf848660"
+      ],
+      "payload_count": 3
+    },
+    "OCR-specific Attacks": {
+      "total_malicious_samples": 9662,
+      "payload_ids": [
+        "PAY-OA-1a266cd60a",
+        "PAY-OA-20a9cc8c79",
+        "PAY-OA-c216f33972",
+        "PAY-OA-eab8dd504a"
+      ],
+      "payload_count": 4
+    },
+    "Policy Bypass": {
+      "total_malicious_samples": 9663,
+      "payload_ids": [
+        "PAY-PB-07720e09dc",
+        "PAY-PB-4f4f35b37a",
+        "PAY-PB-6e68c8b27e",
+        "PAY-PB-bc8d059902",
+        "PAY-PB-d33ccb6c51"
+      ],
+      "payload_count": 5
+    },
+    "Tiny Font Injection": {
+      "total_malicious_samples": 9662,
+      "payload_ids": [
+        "PAY-TFI-7fd9020db3",
+        "PAY-TFI-d758e02fda",
+        "PAY-TFI-db3fc1048d"
+      ],
+      "payload_count": 3
+    },
+    "Watermark Injection": {
+      "total_malicious_samples": 9662,
+      "payload_ids": [
+        "PAY-WI-13c838e7c5",
+        "PAY-WI-6d430613ad",
+        "PAY-WI-97bb383d5f"
+      ],
+      "payload_count": 3
+    },
+    "White Text Injection": {
+      "total_malicious_samples": 9663,
+      "payload_ids": [
+        "PAY-WTI-03558b8adf",
+        "PAY-WTI-4245a38f6c",
+        "PAY-WTI-9d9a8f8551"
+      ],
+      "payload_count": 3
+    }
+  },
+  "payloads": {
+    "PAY-CP-89d53fcfa6": {
+      "attack_family": "Context Poisoning",
+      "total_samples": 3221
+    },
+    "PAY-CP-a2d460f2e0": {
+      "attack_family": "Context Poisoning",
+      "total_samples": 3221
+    },
+    "PAY-CP-b89f5832d0": {
+      "attack_family": "Context Poisoning",
+      "total_samples": 3221
+    },
+    "PAY-DE-25ce43d284": {
+      "attack_family": "Data Exfiltration",
+      "total_samples": 1932
+    },
+    "PAY-DE-2be3be2b5b": {
+      "attack_family": "Data Exfiltration",
+      "total_samples": 1933
+    },
+    "PAY-DE-57744aaeb7": {
+      "attack_family": "Data Exfiltration",
+      "total_samples": 1932
+    },
+    "PAY-DE-8d16fece4f": {
+      "attack_family": "Data Exfiltration",
+      "total_samples": 1932
+    },
+    "PAY-DE-d1faf0cbb3": {
+      "attack_family": "Data Exfiltration",
+      "total_samples": 1933
+    },
+    "PAY-DM-07cc30f11d": {
+      "attack_family": "Decision Manipulation",
+      "total_samples": 1933
+    },
+    "PAY-DM-27c5bf4378": {
+      "attack_family": "Decision Manipulation",
+      "total_samples": 1932
+    },
+    "PAY-DM-59e44f09c9": {
+      "attack_family": "Decision Manipulation",
+      "total_samples": 1932
+    },
+    "PAY-DM-7bcdd656be": {
+      "attack_family": "Decision Manipulation",
+      "total_samples": 1933
+    },
+    "PAY-DM-9d8a7ea174": {
+      "attack_family": "Decision Manipulation",
+      "total_samples": 1932
+    },
+    "PAY-FI-28de1708e1": {
+      "attack_family": "Footer Injection",
+      "total_samples": 3221
+    },
+    "PAY-FI-d8f6bc5564": {
+      "attack_family": "Footer Injection",
+      "total_samples": 3221
+    },
+    "PAY-FI-ee566e169a": {
+      "attack_family": "Footer Injection",
+      "total_samples": 3221
+    },
+    "PAY-HI-87e35177c9": {
+      "attack_family": "Header Injection",
+      "total_samples": 3221
+    },
+    "PAY-HI-ae1f3046e4": {
+      "attack_family": "Header Injection",
+      "total_samples": 3221
+    },
+    "PAY-HI-c22b2411eb": {
+      "attack_family": "Header Injection",
+      "total_samples": 3220
+    },
+    "PAY-HM-4cd35f8e62": {
+      "attack_family": "Hidden Multimodal",
+      "total_samples": 2416
+    },
+    "PAY-HM-d708429f0b": {
+      "attack_family": "Hidden Multimodal",
+      "total_samples": 2415
+    },
+    "PAY-HM-f5d02806f3": {
+      "attack_family": "Hidden Multimodal",
+      "total_samples": 2415
+    },
+    "PAY-HM-faeacfcbb7": {
+      "attack_family": "Hidden Multimodal",
+      "total_samples": 2416
+    },
+    "PAY-IA-18a43ed134": {
+      "attack_family": "Insurance-specific Attacks",
+      "total_samples": 1611
+    },
+    "PAY-IA-2a030483ce": {
+      "attack_family": "Insurance-specific Attacks",
+      "total_samples": 1611
+    },
+    "PAY-IA-5c72996474": {
+      "attack_family": "Insurance-specific Attacks",
+      "total_samples": 1610
+    },
+    "PAY-IA-a87621c2a1": {
+      "attack_family": "Insurance-specific Attacks",
+      "total_samples": 1611
+    },
+    "PAY-IA-f29011e7f9": {
+      "attack_family": "Insurance-specific Attacks",
+      "total_samples": 1610
+    },
+    "PAY-IA-f56c0f021c": {
+      "attack_family": "Insurance-specific Attacks",
+      "total_samples": 1610
+    },
+    "PAY-ICI-165a8c8325": {
+      "attack_family": "Invisible Character Injection",
+      "total_samples": 3220
+    },
+    "PAY-ICI-d42ddbcc35": {
+      "attack_family": "Invisible Character Injection",
+      "total_samples": 3221
+    },
+    "PAY-ICI-e161d6a7f7": {
+      "attack_family": "Invisible Character Injection",
+      "total_samples": 3221
+    },
+    "PAY-IO-182aaca013": {
+      "attack_family": "Instruction Override",
+      "total_samples": 1932
+    },
+    "PAY-IO-40784737ff": {
+      "attack_family": "Instruction Override",
+      "total_samples": 1933
+    },
+    "PAY-IO-623c2347d8": {
+      "attack_family": "Instruction Override",
+      "total_samples": 1933
+    },
+    "PAY-IO-a6fbc71848": {
+      "attack_family": "Instruction Override",
+      "total_samples": 1932
+    },
+    "PAY-IO-c1a0d03c14": {
+      "attack_family": "Instruction Override",
+      "total_samples": 1933
+    },
+    "PAY-MI-07a52dbd3f": {
+      "attack_family": "Metadata Injection",
+      "total_samples": 3221
+    },
+    "PAY-MI-856e0a9bac": {
+      "attack_family": "Metadata Injection",
+      "total_samples": 3221
+    },
+    "PAY-MI-eaaf848660": {
+      "attack_family": "Metadata Injection",
+      "total_samples": 3221
+    },
+    "PAY-OA-1a266cd60a": {
+      "attack_family": "OCR-specific Attacks",
+      "total_samples": 2415
+    },
+    "PAY-OA-20a9cc8c79": {
+      "attack_family": "OCR-specific Attacks",
+      "total_samples": 2416
+    },
+    "PAY-OA-c216f33972": {
+      "attack_family": "OCR-specific Attacks",
+      "total_samples": 2416
+    },
+    "PAY-OA-eab8dd504a": {
+      "attack_family": "OCR-specific Attacks",
+      "total_samples": 2415
+    },
+    "PAY-PB-07720e09dc": {
+      "attack_family": "Policy Bypass",
+      "total_samples": 1932
+    },
+    "PAY-PB-4f4f35b37a": {
+      "attack_family": "Policy Bypass",
+      "total_samples": 1932
+    },
+    "PAY-PB-6e68c8b27e": {
+      "attack_family": "Policy Bypass",
+      "total_samples": 1933
+    },
+    "PAY-PB-bc8d059902": {
+      "attack_family": "Policy Bypass",
+      "total_samples": 1933
+    },
+    "PAY-PB-d33ccb6c51": {
+      "attack_family": "Policy Bypass",
+      "total_samples": 1933
+    },
+    "PAY-TFI-7fd9020db3": {
+      "attack_family": "Tiny Font Injection",
+      "total_samples": 3221
+    },
+    "PAY-TFI-d758e02fda": {
+      "attack_family": "Tiny Font Injection",
+      "total_samples": 3221
+    },
+    "PAY-TFI-db3fc1048d": {
+      "attack_family": "Tiny Font Injection",
+      "total_samples": 3220
+    },
+    "PAY-WI-13c838e7c5": {
+      "attack_family": "Watermark Injection",
+      "total_samples": 3221
+    },
+    "PAY-WI-6d430613ad": {
+      "attack_family": "Watermark Injection",
+      "total_samples": 3220
+    },
+    "PAY-WI-97bb383d5f": {
+      "attack_family": "Watermark Injection",
+      "total_samples": 3221
+    },
+    "PAY-WTI-03558b8adf": {
+      "attack_family": "White Text Injection",
+      "total_samples": 3221
+    },
+    "PAY-WTI-4245a38f6c": {
+      "attack_family": "White Text Injection",
+      "total_samples": 3221
+    },
+    "PAY-WTI-9d9a8f8551": {
+      "attack_family": "White Text Injection",
+      "total_samples": 3221
+    }
+  },
+  "benign_class": {
+    "attack_family": "none",
+    "payload_id": "none",
+    "total_benign_samples": 144937
+  }
+}

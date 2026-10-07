@@ -1,0 +1,24 @@
+# PIID — Dataset Requirements
+# Tested with Python 3.10+
+#
+# Core data processing
+pandas>=2.0.0
+pyarrow>=12.0.0
+numpy>=1.24.0
+
+# Machine learning (for training/evaluation scripts)
+scikit-learn>=1.3.0
+
+# Deep learning (RoBERTa classifier)
+torch>=2.0.0
+transformers>=4.35.0
+
+# Image processing
+Pillow>=10.0.0
+
+# Utilities
+tqdm>=4.65.0
+
+# Optional: notebook support
+jupyterlab>=4.0.0
+ipykernel>=6.25.0

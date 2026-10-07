@@ -1,0 +1,96 @@
+{
+  "name": "PIID",
+  "full_name": "Insurance Document Prompt-Injection Detection Dataset",
+  "version": "1.0.0",
+  "pipeline_version": "v1 (Five-Module: A-B-C-D-E)",
+  "release_type": "PUBLIC_RELEASE",
+  "release_created_at_utc": "2026-09-28T20:07:17.700106+00:00",
+  "dataset_generated_at_utc": "2026-06-25T18:37:25.191102+00:00",
+  "schema_version": "9-column-v1",
+  "columns": [
+    "sample_id",
+    "text",
+    "ocr_text",
+    "image_path",
+    "label",
+    "attack_family",
+    "payload_id",
+    "source_module",
+    "split"
+  ],
+  "label_encoding": {
+    "benign": 0,
+    "malicious": 1
+  },
+  "totals": {
+    "total_samples": 289874,
+    "benign_samples": 144937,
+    "malicious_samples": 144937,
+    "attack_families": 15,
+    "payloads": 58
+  },
+  "splits": {
+    "train": {
+      "file": "data/train.parquet",
+      "rows": 231900,
+      "sha256": "da60b014bb648d29dcbdb26f1f682496d020915c9bc0031b79bd0067aa1755d0",
+      "benign_count": 115950,
+      "malicious_count": 115950,
+      "multimodal": 1504,
+      "text_only": 230396
+    },
+    "validation": {
+      "file": "data/validation.parquet",
+      "rows": 28986,
+      "sha256": "b2a0c59892244475fb2d019332faf8ae50c53deb1aad850a329988453f186f01",
+      "benign_count": 14493,
+      "malicious_count": 14493,
+      "multimodal": 184,
+      "text_only": 28802
+    },
+    "test": {
+      "file": "data/test.parquet",
+      "rows": 28988,
+      "sha256": "685d1461cfee35030a167bd58b046c80214f676af7d1522ae1d3eeceaeb5e243",
+      "benign_count": 14494,
+      "malicious_count": 14494,
+      "multimodal": 182,
+      "text_only": 28806
+    }
+  },
+  "modality": {
+    "multimodal_samples": 1870,
+    "text_only_samples": 288004,
+    "multimodal_pct": 0.645,
+    "text_only_pct": 99.355,
+    "note": "Multimodal samples have a non-null image_path pointing to a PNG in data/images/. All 1,870 multimodal samples are malicious. Text-only samples have image_path=null."
+  },
+  "images": {
+    "directory": "data/images/",
+    "files_on_disk": 1870,
+    "format": "PNG",
+    "historical_note": "Module C originally generated 3,687 image artifacts during pipeline execution. 1,870 were retained and are included in this release. The remaining 1,817 are not part of the downloadable release.",
+    "source": "All images in data/images/ are Module C synthetic outputs. They are project-generated composite document images. Underlying document backgrounds may incorporate third-party source material; see docs/LICENSE_NOTES.md."
+  },
+  "source_modules": {
+    "benign": "MASTER_BENIGN_DATASET (Module A pipeline)",
+    "malicious": "MASTER_MALICIOUS_DATASET (Modules B, C, D pipeline)",
+    "benchmark": "Module E \u2014 Benchmark Dataset Builder"
+  },
+  "five_module_pipeline": {
+    "Module_A": "Analysis, Configuration, Payload Bank \u2014 defines 15 attack families and 58 payloads",
+    "Module_B": "One-to-one text injection \u2014 generates 144,937 injected malicious text records",
+    "Module_C": "Multimodal artifact generation \u2014 images, PDFs, labels (3,687 images produced; 1,870 retained)",
+    "Module_D": "Dataset validation + grouped splits + Parquet builder (Image + Text modalities)",
+    "Module_E": "Benchmark Dataset Builder \u2014 merges benign + malicious, applies group-aware splits, outputs final benchmark"
+  },
+  "reproducibility": {
+    "random_seed": 42,
+    "split_method": "GroupShuffleSplit (sklearn)",
+    "split_group_key": "sample_id numeric suffix (pairs benign_NNNNNNNN with malicious_NNNNNNNN)",
+    "train_ratio": 0.8,
+    "val_ratio": 0.1,
+    "test_ratio": 0.1,
+    "determinism_note": "Pipeline is reproducible under the documented configuration and random seed, with potential environment-dependent variation in OCR and image rendering."
+  }
+}
