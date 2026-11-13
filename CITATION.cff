@@ -4,6 +4,13 @@ type: dataset
 title: "Insurance Document Prompt-Injection Detection Dataset"
 version: 1.0.0
 date-released: "2026-09-29"
+doi: "10.17632/5b6xz84n79.1"
+url: "https://data.mendeley.com/datasets/5b6xz84n79/1"
+repository-code: "https://github.com/PRASANNA-THE-PRASANN1/Insurance-Document-Prompt-Injection-Detection-Dataset"
+identifiers:
+  - type: doi
+    value: "10.17632/5b6xz84n79.1"
+    description: "Mendeley Data permanent deposit"
 license:
   - CC-BY-4.0
 abstract: >

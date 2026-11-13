@@ -29,8 +29,8 @@ task_ids:
 
 ## Dataset Description
 
-- **Repository:** PIID-PUBLIC-RELEASE/
-- **Target Archive:** Mendeley Data
+- **Repository:** PIID-PUBLIC-RELEASE/ ([GitHub](https://github.com/PRASANNA-THE-PRASANN1/Insurance-Document-Prompt-Injection-Detection-Dataset))
+- **Permanent Archive:** Mendeley Data ([DOI: 10.17632/5b6xz84n79.1](https://data.mendeley.com/datasets/5b6xz84n79/1))
 - **Version:** 1.0.0 (Five-Module Pipeline: A → B → C → D → E + Release Verification)
 - **License:** Composite licensing model (CC BY 4.0 for project-created materials; upstream terms apply to third-party-derived components; see `docs/LICENSE_NOTES.md`)
 
@@ -152,10 +152,15 @@ The dataset uses a **composite licensing model**:
 
 ```bibtex
 @dataset{piid_2026,
-  title     = {Insurance Document Prompt-Injection Detection Dataset},
-  year      = {2026},
-  version   = {1.0.0},
-  note      = {Five-module synthetic pipeline. 289,874 samples, 15 attack families, 58 payloads.},
+  title        = {Insurance Document Prompt-Injection Detection Dataset},
+  author       = {Saxena, Prasanna},
+  year         = {2026},
+  version      = {1.0.0},
+  publisher    = {Mendeley Data},
+  doi          = {10.17632/5b6xz84n79.1},
+  url          = {https://data.mendeley.com/datasets/5b6xz84n79/1},
+  howpublished = {\url{https://data.mendeley.com/datasets/5b6xz84n79/1}},
+  note         = {Five-module synthetic pipeline. 289,874 samples, 15 attack families, 58 payloads.}
 }
 ```
-*(Mendeley Data will provide persistent publication DOI and version metadata upon formal repository deposit.)*
+*(Deposited on Mendeley Data with permanent DOI: `10.17632/5b6xz84n79.1`)*

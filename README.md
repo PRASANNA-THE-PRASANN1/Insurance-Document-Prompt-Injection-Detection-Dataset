@@ -1,7 +1,9 @@
 # Insurance Document Prompt-Injection Detection Dataset
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-**Version:** 1.0.0 | **Pipeline:** Five-Module (A → B → C → D → E)
+[![DOI](https://img.shields.io/badge/DOI-10.17632%2F5b6xz84n79.1-blue.svg)](https://data.mendeley.com/datasets/5b6xz84n79/1)
+**Version:** 1.0.0 | **Pipeline:** Five-Module (A → B → C → D → E)  
+**Mendeley Data:** [10.17632/5b6xz84n79.1](https://data.mendeley.com/datasets/5b6xz84n79/1) | **GitHub:** [PRASANNA-THE-PRASANN1/Insurance-Document-Prompt-Injection-Detection-Dataset](https://github.com/PRASANNA-THE-PRASANN1/Insurance-Document-Prompt-Injection-Detection-Dataset)
 
 ---
 
@@ -212,10 +214,15 @@ If you use this dataset, please cite:
 
 ```bibtex
 @dataset{piid_2026,
-  title     = {Insurance Document Prompt-Injection Detection Dataset},
-  year      = {2026},
-  version   = {1.0.0},
-  note      = {Five-module synthetic pipeline (A-B-C-D-E). 289,874 samples, 15 attack families, 58 payloads. Seed=42.},
+  title        = {Insurance Document Prompt-Injection Detection Dataset},
+  author       = {Saxena, Prasanna},
+  year         = {2026},
+  version      = {1.0.0},
+  publisher    = {Mendeley Data},
+  doi          = {10.17632/5b6xz84n79.1},
+  url          = {https://data.mendeley.com/datasets/5b6xz84n79/1},
+  howpublished = {\url{https://data.mendeley.com/datasets/5b6xz84n79/1}},
+  note         = {Five-module synthetic pipeline (A-B-C-D-E). 289,874 samples, 15 attack families, 58 payloads. Seed=42.}
 }
 ```
 
